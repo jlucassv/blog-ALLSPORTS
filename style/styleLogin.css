@@ -1,0 +1,220 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+/* HEADER */
+.iconNavbar{
+  width: 50px;
+}
+.logoNavbar {
+  width: 180px;
+}
+.header {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(44, 43, 43);
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  height:2rem ;
+  min-height:14vh ;
+  position: fixed;
+  box-shadow: 5px 5px 10px black; 
+  
+  
+}
+.navHeader{
+  display: flex;
+  gap: 15px;
+}
+.navBtn {
+  border: 2px solid transparent;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 8px;
+  margin-left: 10px;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navBtn:hover {
+  border-bottom: 2px solid white;
+}
+/* SECTION */
+p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main-content{
+  padding-top: 6rem;
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/*LOGIN */
+.loginContent{
+  display: flex;
+  flex-direction: column;
+  
+}
+.title{
+  padding: 10px;
+  font-size: 30px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(247, 97, 97);
+  border-bottom: 1px solid black;
+}
+.p-login{
+  padding: 5px;
+  color: rgb(247, 97, 97);
+}
+.inputbox{
+  border-radius: 20px;
+  padding: 8px;
+  border: 1px solid gray;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-left: 15px;
+}
+.inputbox:hover{
+  background-color: rgb(245, 245, 245);
+}
+.inputbox:focus-visible{
+  outline: 1px solid rgb(211, 211, 211);
+}
+#emailLogin,
+#passwordLogin{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#remember-me {
+  background-color:  rgb(247, 97, 97);
+  font-size: 5px;
+  margin-top: 20px;
+}
+
+#Loginsubmit{
+  margin-top: 20px;
+  padding: 10px;
+  width: 290px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: 0.3s;
+  background-color: rgb(255, 45, 87);
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#Loginsubmit:hover{
+  background-color: rgb(247, 97, 97);
+  color: white;
+}
+#forgotlogin{
+  text-decoration: none;
+  color:  rgb(255, 45, 87);
+  display: flex;
+  justify-content: center;
+  transition: 0.4s;
+}
+#forgotlogin:hover{
+  color: black;
+}
+.verticalLine {
+    display: inline-block;
+    position: relative;
+    width: 1px;
+    min-height: 285px;
+    margin: 0 7.65vw;
+    border-left: 1px solid black;
+    text-align: center;
+}
+/* REGISTER */
+.registerContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.registerTitle{
+  padding: 10px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(247, 97, 97);
+  border-bottom: 1px solid black;
+}
+#btncreate-container{
+  display: flex;
+  justify-content: center;
+}
+
+#btnCreate{
+  margin-top: 20px;
+  padding: 10px;
+  width: 290px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: 0.3s;
+  background-color: rgb(255, 45, 87);
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#btnCreate:hover{
+  background-color: rgb(247, 97, 97);
+  color: white;
+}
+
+
+/* FOOTER */
+.footer{
+  display: flex;
+  background-color: rgb(44, 43, 43);
+  padding: 11px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 40px;
+  gap: 15px;
+  margin-top: 5px;
+  box-shadow: 5px 5px 20px black; 
+}
+
+.logoFooter {
+  width: 35px;
+}
+@media (max-width: 630px) {
+  .gridContainer {
+    grid-template-areas:
+      "mainContent"
+      "sidebarContent";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .sidebarContent {
+    min-width: auto;
+  }
+  .footerAnchor {
+    font-size: 19px;
+  }
+}
+@media (max-width: 463px) {
+  .header {
+    justify-content: center;
+  }
+  .footer {
+    justify-content: center;
+  }
+}

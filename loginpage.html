@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/styleLogin.css">
+  <title>Projeto</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="./index.html"><img src="./img/icon.png" alt="logo" class="iconNavbar"></a>
+      <a href="./index.html"><img src="./img/logo.png" alt="logo" class="logoNavbar"></a>
+      <div class="navHeader" id="home">
+          <a href="./loginpage.html"><button class="navBtn">Login</button></a>
+          <a href="./register.html"><button class="navBtn">Registre-se</button></a>
+      </div>
+    </header>
+    <section class="main-content">
+      <div class="loginContent">
+        <p class="title">Login</p>
+        <form action="">
+          <div>
+            <label for="emailLogin"><p class="p-login">Usuário:</p></label>    
+            <input type="email" name="emailLogin" id="emailLogin" class="inputbox" placeholder="Email" required> 
+          </div>
+          <div>
+            <label for="passwordLogin"><p class="p-login">Senha:</p> </label>
+            <input type="password" name="passwordLogin" id="passwordLogin" class="inputbox" placeholder="Senha" required >
+          </div>
+          <div>
+            <input type="checkbox" name="remember-me" id="remember-me">
+            <label for="remember-me">Lembrar-me</label>
+          </div>
+          <div>
+            <input type="submit" value="login" id="Loginsubmit">
+            <a href="../blog/passwordpage.html" id="forgotlogin"><p class="p-login"> Esqueceu a senha?</p></a>
+          </div>
+        </form>    
+      </div>
+      <div class="verticalLine"></div>
+      <div class="registerContent">
+        <p class="registerTitle">Registre-se</p>
+        <p class="p-register">Ainda não possui uma cadastro? Crie agora uma conta!</p>
+        <form action="">
+          <div id="btncreate-container">
+           <a href="./register.html"><input type="button" value="criar conta" id="btnCreate"></a>
+         </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <img src="./img/icon.png" alt="icon" class="logoFooter">
+    </footer>
+  </div>
+  
+</body>
+</html>
